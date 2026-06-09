@@ -1,35 +1,36 @@
-# 🧾 {{title}}
+# 🧾 {{MEOW}}
 
 ## 📌 Información General
 
-- Máquina: {{title}}
+- **Máquina:**  {{}}
     
-- IP:
+- **IP:** 
     
-- Dificultad:
+- **Dificultad:** 
     
-- Fecha: {{date}}
+- **Fecha:** 
     
-- Estado:
-    
+- **Estado:**  
+     
 
 ---
 
 ## 🎯 Objetivo
 
--  User
-    
--  Root
+-  **User:** 
+- 
+-  **Root:** 
     
 
 ---
 
 ## 🧠 Hipótesis Inicial
 
-- ¿Qué creo que voy a encontrar?
-    
-- ¿Qué haría un atacante?
-    
+ **¿Qué creo que voy a encontrar?**
+
+ **¿Qué haría un atacante?**
+ 
+
 
 ---
 
@@ -38,21 +39,21 @@
 ### 🔎 Nmap
 
 ```bash
-nmap -sC -sV -Pn <IP>
+nmap -sC -sV -Pn <>
 ```
 
 ### 📊 Resultado
-
+  
 ### 🧠 Análisis
 
 ---
 
 ## 🚪 Servicios
 
-### 🔹 Servicio:
+### 🔹 Servicio: 
 
 #### 🔍 Objetivo
-
+ 
 #### 💻 Comandos
 
 #### 📊 Output
@@ -84,10 +85,10 @@ nmap -sC -sV -Pn <IP>
 
 ### 🚨 Detección
 
-- Logs:
-    
-- Alertas:
-    
+ Logs: 
+
+ Alertas:
+ 
 
 ### 🔐 Prevención
 
@@ -95,7 +96,7 @@ nmap -sC -sV -Pn <IP>
 
 ## 🔗 Kill Chain
 
-Recon → Servicio → Vuln → Acceso → Impacto
+
 
 ---
 
