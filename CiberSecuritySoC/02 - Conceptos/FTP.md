@@ -1,37 +1,71 @@
 # FTP
 
-## 📌 Qué es
-Protocolo de transferencia de archivos entre cliente y servidor.
+## 📌 Resumen
+FTP (File Transfer Protocol) es un protocolo usado para transferir archivos entre cliente y servidor a través de una red.
 
-Se usa para subir y descargar archivos en sistemas remotos.
+---
 
-## ⚠️ Riesgos
-- Credenciales en texto plano (si no es FTPS)
+## 🧠 Concepto / Qué es
+- Protocolo de transferencia de archivos
+- Cliente-servidor
+- Funciona en texto plano (sin cifrado en FTP clásico)
+
+---
+
+## ⚙️ Cómo funciona (si aplica)
+FTP utiliza un modelo cliente-servidor:
+- Puerto 21 para control
+- Puertos dinámicos para transferencia de datos
+- Permite autenticación o acceso anónimo
+
+---
+
+## 🌐 Uso en ciberseguridad
+- Pentesting: enumeración de archivos y accesos anónimos
+- Explotación de configuraciones débiles
+- Descarga de archivos sensibles
+- Subida de webshells si hay permisos
+
+---
+
+## ⚠️ Puntos importantes
+- Credenciales en texto plano (FTP sin TLS)
 - Acceso anónimo mal configurado
-- Permite subida de archivos maliciosos
-- Enumeración de directorios expuesta
+- Permisos de escritura peligrosos
+- Exposición de archivos sensibles
 
-## 🧠 Uso en pentesting
-- Comprobar acceso anónimo (anonymous login)
-- Descargar archivos sensibles
-- Subir webshells si hay permisos de escritura
-- Enumerar contenido del servidor
+---
 
-## 🔎 Cosas a probar
-- ftp anonymous login
-- get / download files
-- put (subida de archivos)
-- banner grabbing con Nmap
+## 🔎 Qué probar / Enumeración
+- Escaneo con Nmap al puerto 21
+- Login anónimo (anonymous)
+- Enumeración de archivos
+- Descarga de contenido sensible
+- Prueba de subida de archivos
 
-## 🛠️ Comandos útiles
-- ftp <IP>
-- ls
-- get archivo.txt
-- put shell.php
+---
 
-## 🔗 Relacionado
-[[Nmap]]
-[[Telnet]]
-[[Enumeración de servicios]]
-[[Webshell]]
-[[Escalada de privilegios]]
+## 🛠️ Comandos
+
+### Comando principal
+```bash
+ftp <>```
+```
+
+## 🧰Herramientas
+- Nmap -sV -p 21 IP
+- Hydra (Fuerza Bruta)
+- wget/curl (descarga)
+
+## 🧰🔗Herramientas Relacionadas
+- Nmap
+- Hydra
+- Netcat
+- Ftp Client
+## Relacionado
+- [[Nmap]]
+- [[Enumeracion de Servicios]]
+- [[Telnet]]
+- [[Sniffing]]
+
+
