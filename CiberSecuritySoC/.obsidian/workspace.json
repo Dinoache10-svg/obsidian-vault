@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Machines (HTB)/Fawn.md",
+                "file": "01 - Machines (HTB)/DANCING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fawn"
+              "title": "DANCING"
             }
           }
         ]
@@ -183,15 +183,16 @@
   },
   "active": "58d2c10d7905356b",
   "lastOpenFiles": [
+    "01 - Machines (HTB)/Fawn.md",
+    "01 - Machines (HTB)/DANCING.md",
+    "01 - Machines (HTB)/Meow.md",
     "07 - Plantillas/Servicios Universales.md",
     "02 - Conceptos/FTP.md",
     "02 - Conceptos/Telnet.md",
-    "01 - Machines (HTB)/Meow.md",
     "07 - Plantillas/SOC Template.md",
     "07 - Plantillas/HTB Template.md",
     "02 - Conceptos/Sin título.md",
     "03 - Herramientas/README.md",
-    "01 - Machines (HTB)/Fawn.md",
     "06 - Metodologia/README.md",
     "05 - Logs & Evidencia/README.md",
     "04 - Labs (Blue Team)/README.md",

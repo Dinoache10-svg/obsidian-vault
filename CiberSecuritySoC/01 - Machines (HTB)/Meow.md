@@ -86,9 +86,9 @@ Nos conectamos por Telnet: telnet 10.129.35.191, Cuando nos solicita login: root
 
 ## 🏁 Flags
 
-- User:
+- **User:** b40abdfe23665f766f9c61ecba8a4c19
     
-- Root:
+- **Root:** No se ha requerido escalada.
     
 
 ---
