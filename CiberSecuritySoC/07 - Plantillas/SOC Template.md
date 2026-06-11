@@ -1,65 +1,140 @@
 # 🛡️ Incident Report - {{title}}
 
-## 📌 Información
+---
 
-- Fecha: {{date}}
+## 📌 1. Información General
+
+- **Fecha de detección:** 
     
-- Tipo:
+- **Analista:**
     
-- Severidad:
+- **Tipo de incidente:**
+    
+- **Severidad:**
+    
+- **Estado:**
+    
+- **Fuente de detección:**
     
 
 ---
 
-## 🚨 Evento Detectado
+## 🧭 2. Resumen Ejecutivo
 
 ---
 
-## 📊 Logs Analizados
+## 🚨 3. Evento Detectado
+
+- **Regla / Alerta:**
+    
+- **Descripción:**
+    
+- **Sistema afectado:**
+    
+- **Usuario afectado (si aplica):**
+    
+- **IP origen:**
+    
+- **IP destino:**
+    
+- **Puerto / Servicio:**
+    
+
+---
+
+## 🕒 4. Línea de Tiempo (Timeline)
+
+|Hora|Evento|
+|---|---|
+|||
+|||
+
+---
+
+## 📊 5. Logs Analizados
 
 ```
-(pegar logs)
+(pegar logs relevantes aquí)
 ```
 
----
-
-## 🔍 Análisis
-
-- ¿Qué pasó?
+- **Fuente del log:**
     
-- ¿Quién atacó?
-    
-- ¿Cómo?
+- ## **Eventos clave identificados:**
     
 
 ---
 
-## 🎯 Indicadores (IoC)
+## 🔍 6. Análisis Técnico
 
-- IP:
+### ¿Qué pasó?
+
+### ¿Cómo ocurrió?
+
+### ¿Quién atacó?
+
+---
+
+## 🎯 7. Indicadores de Compromiso (IoC)
+
+- **IP(s):**
     
-- Hash:
+- **Dominio(s):**
     
-- Dominio:
+- **Hash(es):**
+    
+- **URL(s):**
+    
+- **Archivo(s):**
     
 
 ---
 
-## 🧠 Tácticas (MITRE ATT&CK)
+## 🧠 8. Tácticas y Técnicas (MITRE ATT&CK)
 
----
-
-## 🔐 Respuesta
-
-- Acción tomada:
+- ## **Tácticas:**
     
-- Contención:
-    
-- Erradicación:
+- ## **Técnicas:**
     
 
 ---
 
-## 🧠 Lecciones
+## 💥 9. Impacto
+
+- **Sistemas afectados:**
+    
+- **Datos comprometidos:**
+    
+- **Disponibilidad:**
+    
+- **Riesgo para el negocio:**
+    
+
+---
+
+## 🔐 10. Respuesta al Incidente
+
+### Acción tomada
+
+### Contención
+
+### Erradicación
+
+### Recuperación
+
+---
+
+## 🧪 11. Evidencias
+
+---
+
+## 🛠️ 12. Recomendaciones
+
+---
+
+## 🧠 13. Lecciones Aprendidas
+
+---
+
+## 📎 14. Referencias
 
 ---

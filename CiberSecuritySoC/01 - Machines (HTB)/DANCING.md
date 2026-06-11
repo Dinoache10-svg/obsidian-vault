@@ -17,9 +17,9 @@
 
 ## 🎯 Objetivo
 
--  **User:** 
-- 
--  **Root:** 
+-  **User:** 5f61c10dffbc77a704d76016a22f1664
+
+-  **Root:** - ❌ No aplica (máquina sin escalada real / nivel enumeración SMB)
     
 
 ---
@@ -43,7 +43,7 @@
 ## 🌐 Enumeración
 - 
 ### 🔎 Nmap
-
+Escanear puertos
 ```bash
 nmap -sC -sV -Pn <10.129.37.134>
 ```
@@ -53,6 +53,7 @@ nmap -sC -sV -Pn <10.129.37.134>
   - 139/TCP / netbios-ssn.
   - 445/TCP / SMB (Microsoft-ds).
   - 5985/TCP / WinRM (HTTPAPI 2.0).
+---
 ### 🧠 Análisis
 ### 🔹 SMB (445)
 - Vector principal de enumeración inicial.
@@ -72,11 +73,11 @@ nmap -sC -sV -Pn <10.129.37.134>
 
 ## 🚪 Servicios
 
-### 🔹 Servicio: 
+### 🔹 Servicio: SMB (principal)
 
 #### 🔍 Objetivo
  - Identificar shares accesibles, permisos y posibles vectores de acceso anónimo.
- - 
+ ---
 #### 💻 Comandos
 - Listar Shares:
 ```shell 
@@ -90,7 +91,7 @@ enum4linux -a 10.129.37.134
 ```shell
 smbclient //10.129.37.134/<share> -N
 ```
-
+---
 #### **📊 Output**
 - ADMIN$ / Share administrativo (requiere privilegios).
 - C$ / Disco raíz del sistema (requiere privilegios).
@@ -227,9 +228,7 @@ El share contiene dos directorios que parecen corresponder a usuarios del sistem
 - Enumeración directa de usuarios del sistema.
 -  Posible credencial reutilizable o flag expuesta.
 ## 🧠 Worknotes - Análisis
-
-Contenido encontrado:
-
+**Contenido encontrado:**
 - start apache server on the linux machine.
 - secure the ftp server.
 - setup winrm on dancing.
@@ -239,6 +238,27 @@ Contenido encontrado:
 - Se menciona FTP (posible vector histórico o activo).
 - WinRM está configurado en la máquina "Dancing."
 - Esto confirma que el siguiente vector de ataque es WinRM (5985).
+## 🧠 Estado de la máquina
+
+### ✔ SMB
+- Acceso anónimo disponible.
+- Shares enumerados.
+- Directorios de usuarios identificados.
+- Archivos revisados (sin credenciales).
+### ❌ Resultado
+- No hay credenciales explotables en SMB.
+- SMB ya cumplió su función: **recolección de información, no explotación final**.
+## 🧠 Pivot real de ataque
+**El archivo confirma que:**
+- WinRM está configurado (5985 ya visto en Nmap).
+- El acceso remoto está previsto como vía de administración.
+- Por lo tanto, el siguiente paso lógico NO es SMB.
+-  Es validación de credenciales para WinRM.
+## 🧠 Pivot real
+**La credencial NO está en WinRM ni SMB directamente.**
+Está en uno de estos sistemas auxiliares:
+- FTP (muy probable)
+- Apache (posible web leak)
 ## 👑 Escalada de privilegios
 
 ---

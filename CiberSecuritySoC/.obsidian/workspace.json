@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "dd70d2cd178fb516",
+        "id": "74df4bcc2256d69c",
         "type": "tabs",
         "children": [
           {
-            "id": "58d2c10d7905356b",
+            "id": "773dfd09b5679f02",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Machines (HTB)/DANCING.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DANCING"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
             }
           }
         ]
@@ -181,31 +177,42 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "58d2c10d7905356b",
+  "active": "773dfd09b5679f02",
   "lastOpenFiles": [
-    "01 - Machines (HTB)/Fawn.md",
-    "01 - Machines (HTB)/DANCING.md",
-    "01 - Machines (HTB)/Meow.md",
-    "07 - Plantillas/Servicios Universales.md",
-    "02 - Conceptos/FTP.md",
+    "02 - Conceptos/DNS.md",
     "02 - Conceptos/Telnet.md",
-    "07 - Plantillas/SOC Template.md",
+    "02 - Conceptos/FTP.md",
+    "02 - Conceptos/Sniffing.md",
+    "02 - Conceptos/Nmap.md",
+    "02 - Conceptos/HTTP.md",
+    "Enumeracion de Servicios.md",
+    "00 - Dashboard/Tools MOC.md",
+    "00 - Dashboard/Blue Team MOC.md",
+    "00 - Dashboard/Network MOC.md",
+    "00 - Dashboard/Network Security MOC.md",
+    "00 - Dashboard/README.md",
+    "Untitled.md",
+    "Sin título.base",
+    "Nmap.md",
+    "04 - Casos- SOC-Team/INC-2026-001_HackTheBox_Dancing.md",
+    "01 - Machines (HTB)/DANCING.md",
+    "07 - Plantillas/HTB Template 2.md",
     "07 - Plantillas/HTB Template.md",
+    "07 - Plantillas/SOC Template.md",
+    "07 - Plantillas/Servicios Universales.md",
+    "01 - Machines (HTB)/Sin título.md",
+    "01 - Machines (HTB)/Fawn.md",
+    "01 - Machines (HTB)/Meow.md",
+    "04 - SOC-/README.md",
     "02 - Conceptos/Sin título.md",
     "03 - Herramientas/README.md",
-    "06 - Metodologia/README.md",
-    "05 - Logs & Evidencia/README.md",
-    "04 - Labs (Blue Team)/README.md",
-    "00 - Dashboard/README.md",
-    "Sin título.md",
     "07 - Plantillas",
     "05 - Logs & Evidencia",
     "02 - Conceptos",
     "03 - Herramientas",
     "06 - Metodologia",
-    "04 - Labs (Blue Team)",
+    "04 - Casos- SOC-Team",
     "01 - Machines (HTB)",
-    "00 - Dashboard",
-    "Bienvenido.md"
+    "00 - Dashboard"
   ]
 }

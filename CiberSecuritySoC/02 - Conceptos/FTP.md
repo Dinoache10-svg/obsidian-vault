@@ -1,4 +1,5 @@
 # FTP
+# FTP
 
 ## 📌 Resumen
 FTP (File Transfer Protocol) es un protocolo usado para transferir archivos entre cliente y servidor a través de una red.
@@ -12,60 +13,91 @@ FTP (File Transfer Protocol) es un protocolo usado para transferir archivos entr
 
 ---
 
-## ⚙️ Cómo funciona (si aplica)
-FTP utiliza un modelo cliente-servidor:
+## ⚙️ Cómo funciona
 - Puerto 21 para control
 - Puertos dinámicos para transferencia de datos
-- Permite autenticación o acceso anónimo
+- Autenticación o acceso anónimo
 
 ---
 
 ## 🌐 Uso en ciberseguridad
-- Pentesting: enumeración de archivos y accesos anónimos
+- Enumeración de archivos y directorios
 - Explotación de configuraciones débiles
-- Descarga de archivos sensibles
-- Subida de webshells si hay permisos
+- Descarga de información sensible
+- Subida de archivos maliciosos (webshells)
 
 ---
 
 ## ⚠️ Puntos importantes
-- Credenciales en texto plano (FTP sin TLS)
+- Credenciales en texto plano
 - Acceso anónimo mal configurado
 - Permisos de escritura peligrosos
-- Exposición de archivos sensibles
+- Exposición de datos sensibles
 
 ---
 
-## 🔎 Qué probar / Enumeración
+## 🔎 Enumeración
 - Escaneo con Nmap al puerto 21
 - Login anónimo (anonymous)
 - Enumeración de archivos
 - Descarga de contenido sensible
-- Prueba de subida de archivos
 
 ---
 
-## 🛠️ Comandos
-
-### Comando principal
-```bash
-ftp <>```
-```
-
-## 🧰Herramientas
+## 🛠️ Herramientas
 - Nmap -sV -p 21 IP
-- Hydra (Fuerza Bruta)
-- wget/curl (descarga)
-
-## 🧰🔗Herramientas Relacionadas
-- Nmap
-- Hydra
+- Hydra (fuerza bruta)
+- wget / curl
+- FTP client
 - Netcat
-- Ftp Client
-## Relacionado
+
+---
+
+## 💣 Ataques relacionados
+- [[Sniffing]]
 - [[Nmap]]
-- [[Enumeracion de Servicios]]
+- [[Enumeration]]
+
+---
+
+## 🐚 Shell / Acceso
+- Subida de webshell si hay permisos de escritura
+- Ejecución indirecta vía archivos maliciosos
+- Posible pivot si se combina con otras vulnerabilidades
+
+---
+
+## 🔵 Detección Blue Team
+- [[Logs FTP]]
+- [[Network monitoring]]
+- [[SIEM alerts]]
+
+---
+
+## 🧯 Respuesta / Mitigación
+- Deshabilitar FTP si no es necesario
+- Usar SFTP en su lugar
+- Desactivar acceso anónimo
+- Monitorizar intentos de login fallidos
+
+---
+
+## 🛠️ Tools MOC
+- [[Tools MOC]]
+
+---
+
+## 🔗 Relacionado
 - [[Telnet]]
 - [[Sniffing]]
+- [[Nmap]]
+- [[Enumeration]]
+- [[DNS]]
 
+---
 
+## 🧭 MOCs relacionados
+- [[Network Security MOC]]
+- [[Network MOC]]
+- [[Blue Team MOC]]
+- [[Tools MOC]]
