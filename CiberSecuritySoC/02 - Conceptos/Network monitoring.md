@@ -34,7 +34,6 @@ Es vigilar todo el tráfico de una red para detectar actividad sospechosa.
 ---
 
 ## 🔗 Relacionado
-- [[Sniffing]]
 - [[SIEM alerts]]
 - [[Sniffing]]  
 - [[Nmap]]  
