@@ -87,7 +87,7 @@ nmap -sV -sC -p 23 <10.129.35.191>
 - [[HTTP]]
 - [[DNS]]
 - [[Nmap]]
-
+- [[SSH]]
 ---
 ## 🧭 MOCs relacionados
 - [[Network Security MOC]]

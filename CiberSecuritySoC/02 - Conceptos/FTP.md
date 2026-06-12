@@ -71,7 +71,9 @@ FTP (File Transfer Protocol) es un protocolo usado para transferir archivos entr
 - [[Logs FTP]]
 - [[Network monitoring]]
 - [[SIEM alerts]]
-
+- [[Network monitoring]]
+- [[SIEM alerts]]
+- [[Logs FTP]]
 ---
 
 ## 🧯 Respuesta / Mitigación
@@ -93,6 +95,8 @@ FTP (File Transfer Protocol) es un protocolo usado para transferir archivos entr
 - [[Nmap]]
 - [[Enumeration]]
 - [[DNS]]
+- [[HTTP]]
+- [[SSH]]
 
 ---
 

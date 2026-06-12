@@ -96,7 +96,8 @@ HTTP es el protocolo que permite que navegadores y servidores web se comuniquen.
 - [[FTP]]
 - [[Telnet]]
 - [[Sniffing]]
-
+- [[DNS]]  
+- [[SSH]]
 ---
 
 ## 🧭 MOCs relacionados

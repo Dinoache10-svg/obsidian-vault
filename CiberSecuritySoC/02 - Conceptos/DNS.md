@@ -93,6 +93,9 @@ DNS es el sistema que traduce nombres de dominio (como google.com) a direcciones
 
 ## 🔗 Relacionado
 - [[HTTP]]
+- [[FTP]]  
+- [[Telnet]]  
+- [[SSH]]
 - [[Sniffing]]
 - [[Nmap]]
 

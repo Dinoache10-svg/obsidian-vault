@@ -113,6 +113,7 @@ nmap -sC -sV -p- <IP>
 - [[Telnet]]
 - [[HTTP]]
 - [[DNS]]
+- [[SSH]]
 
 ---
 

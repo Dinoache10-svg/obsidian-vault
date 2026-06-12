@@ -84,6 +84,9 @@ Sniffing es la técnica de interceptar y analizar el tráfico de red que viaja e
 - [[Nmap]]
 - [[DNS]]
 - [[HTTP]]
+- [[FTP]]
+- [[Telnet]]
+
 ---
 ## 🧭 MOCs relacionados
 - [[Network Security MOC]]
